@@ -1,0 +1,64 @@
+.thamb-work {
+  position: relative;
+}
+
+.thamb-title {
+  display: inline-block;
+  position: absolute;
+  bottom: 27px;
+  right: 107px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.thamb-work::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.section.work {
+  padding-bottom: 94px;
+}
+
+.list.work-list {
+  display: flex;
+}
+
+.work-item {
+  width: calc((100% - 60px) / 3);
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list .section-title {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.work .section-title,
+.team .section-title,
+.clients .section-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.list .section-text {
+  color: var(--secondary-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
