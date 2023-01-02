@@ -1,5 +1,14 @@
 .thamb-work {
   position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
 
 .thamb-title {
@@ -16,16 +25,6 @@
   color: #ffffff;
 }
 
-.thamb-work::before {
-  position: absolute;
-  content: '';
-  display: inline-block;
-  bottom: 0;
-  width: 100%;
-  height: 70px;
-  background: rgba(47, 48, 58, 0.8);
-}
-
 .section.work {
   padding-bottom: 94px;
 }
@@ -36,10 +35,9 @@
 
 .work-item {
   width: calc((100% - 60px) / 3);
-}
-
-.work-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .list .section-title {

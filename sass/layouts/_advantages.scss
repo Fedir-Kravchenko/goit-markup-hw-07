@@ -10,6 +10,14 @@
 .advantages-item {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
+
+  &:nth-child(4n) {
+  margin-right: 0;
+}
+
+& .section-title {
+  margin-bottom: 10px;
+}
 }
 
 .icon-advantages {
@@ -22,10 +30,4 @@
   background-color: #f5f4fa;
 }
 
-.advantages-item:nth-child(4n) {
-  margin-right: 0;
-}
 
-.advantages-item .section-title {
-  margin-bottom: 10px;
-}
