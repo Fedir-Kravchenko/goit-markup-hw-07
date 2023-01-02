@@ -15,7 +15,7 @@
 
 .team-list {
   display: flex;
-  & .carts {
+   .carts {
     background-color: var(--footer-logo-color);
     width: calc((100% - 90px) / 4);
 
@@ -40,7 +40,7 @@
 .list-social {
   display: flex;
   justify-content: center;
-  & .icon-social {
+   .icon-social {
     display: block;
   }
 }

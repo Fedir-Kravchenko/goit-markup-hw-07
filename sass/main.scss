@@ -4,15 +4,15 @@
 @import './components/container';
 @import './components/backdrop';
 
-@import './header';
-@import './components/hero';
-@import './components/advantages';
-@import './components/work';
-@import './components/team';
-@import './components/clients';
-@import './components/footer';
-@import './components/portfolio';
-@import './components/modal';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/advantages';
+@import './layouts/work';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/portfolio';
+@import './layouts/modal';
 
 /* Variables */
 /* Global */
