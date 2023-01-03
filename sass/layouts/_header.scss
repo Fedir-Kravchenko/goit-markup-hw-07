@@ -1,15 +1,15 @@
 /* 1.1 site-nav */
 
-.header.section {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
-.container.header {
+.header .container {
   @extend %flex-align;
   justify-content: space-between;
 }
 
-.header-logo {
+.logo {
   display: inline-block;
   padding: 24px 0 25px;
   margin-right: 93px;
@@ -20,7 +20,7 @@
   @include font(26px, null, 1.2, null);
 }
 
-.header-list {
+.navigation__list {
   display: flex;
 
   .link {
@@ -33,17 +33,17 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  & .item:not(:first-child) {
+  & .navigation__item:not(:first-child) {
     margin-left: 50px;
   }
 }
 
-.header-link:focus,
-.header-link:hover {
+.navigation__link:focus,
+.navigation__link:hover {
   color: var(--accent-color);
 }
 
-.header-nav {
+.navigation {
   @extend %flex-align;
 
   .link.current {
@@ -68,7 +68,7 @@
 
 /* 1.2 contacts */
 
-.contacts {
+.contacts__list {
   @extend %flex-align;
 
   .link:hover,
@@ -76,13 +76,13 @@
     color: var(--accent-color);
   }
 
-  .item:not(:first-child) {
+  .contacts__item:not(:first-child) {
     margin-left: 50px;
   }
 }
 
-.mail,
-.phone {
+.contacts__mail,
+.contacts__phone {
   @extend %flex-align;
   padding: 32px 0 32px;
   color: var(--secondary-color);
@@ -92,7 +92,7 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-header-contact {
+.contacts__icon__header {
   margin-right: 10px;
   fill: currentColor;
 

@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
 }
 
-.section .hero-title {
+.container__hero-title {
   margin: 0 auto 30px;
   color: var(--footer-logo-color);
 
@@ -26,7 +26,7 @@
 
 /* 2.1 Button for first page*/
 
-.button {
+.container__hero-button {
   color: var(--footer-logo-color);
   background-color: var(--accent-color);
   padding: 10px 24px;
