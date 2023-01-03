@@ -24,11 +24,11 @@
   color: #ffffff;
 }
 
-.section.work {
+.work {
   padding-bottom: 94px;
 }
 
-.list.work-list {
+.list.work__list {
   display: flex;
 }
 
@@ -39,13 +39,12 @@
   }
 }
 
-.list .section-title {
+.list .work__title {
   @include font(14px, null, 1.14, null);
 }
 
-.work .section-title,
-.team .section-title,
-.clients .section-title {
+.work .work__title,
+.clients .clients__title {
   margin-bottom: 50px;
 
   @include font(36px, null, 1.17, 0.03em);

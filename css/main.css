@@ -53,7 +53,7 @@ img {
   --footer-logo-color: #ffffff;
 }
 
-.modal-form, .close-btn, .thamb-portfolio-img, .sub-btn, .social-networcs .link, .clients-link, .link-social, .icon-advantages, .contacts__mail,
+.modal-form, .close-btn, .thamb-portfolio-img, .sub-btn, .social-networcs .link, .clients-link, .link-social, .advantages__icon, .contacts__mail,
 .contacts__phone, .contacts__list, .navigation, .header .container {
   display: flex;
   align-items: center;
@@ -92,11 +92,14 @@ img {
 .logo {
   display: inline-block;
   padding: 24px 0 25px;
-  margin-right: 93px;
   color: var(--logo-color);
   font-family: "raleway", sans-serif;
   font-size: 26px;
   line-height: 1.2;
+}
+
+.header__logo {
+  margin-right: 93px;
 }
 
 .navigation__list {
@@ -216,23 +219,23 @@ img {
   padding: 94px 0;
 }
 
-.advantages-list {
+.advantages__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.advantages-item {
+.advantages__item {
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
 }
-.advantages-item:nth-child(4n) {
+.advantages__item:nth-child(4n) {
   margin-right: 0;
 }
-.advantages-item .section-title {
+.advantages__item .advantages__title {
   margin-bottom: 10px;
 }
 
-.icon-advantages {
+.advantages__icon {
   justify-content: center;
   margin-bottom: 30px;
   height: 120px;
@@ -266,11 +269,11 @@ img {
   color: #ffffff;
 }
 
-.section.work {
+.work {
   padding-bottom: 94px;
 }
 
-.list.work-list {
+.list.work__list {
   display: flex;
 }
 
@@ -281,14 +284,13 @@ img {
   margin-right: 30px;
 }
 
-.list .section-title {
+.list .work__title {
   font-size: 14px;
   line-height: 1.14;
 }
 
-.work .section-title,
-.team .section-title,
-.clients .section-title {
+.work .work__title,
+.clients .clients__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
@@ -307,22 +309,30 @@ img {
   background-color: #f5f4fa;
 }
 
-.carts {
+.team__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.card-list {
+  display: flex;
+}
+.card-list .card-list__item {
+  background-color: var(--footer-logo-color);
+  width: calc((100% - 90px) / 4);
+  text-align: center;
+}
+
+.card-list__item {
   margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.carts:not(:last-child) {
+.card-list__item:not(:last-child) {
   margin-right: 30px;
-}
-
-.team-list {
-  display: flex;
-}
-.team-list .carts {
-  background-color: var(--footer-logo-color);
-  width: calc((100% - 90px) / 4);
-  text-align: center;
 }
 
 .name {
@@ -880,8 +890,8 @@ img {
 /* 2. Hero */
 /* 3. Advantages */
 /* 4. Work */
-/* 4. Team */
-/* 5. Clients */
-/* 6. Footer */
-/* 7.Portfolio */
-/* 8. Modal *//*# sourceMappingURL=main.css.map */
+/* 5. Team */
+/* 6. Clients */
+/* 7. Footer */
+/* 8.Portfolio */
+/* 9. Modal *//*# sourceMappingURL=main.css.map */
