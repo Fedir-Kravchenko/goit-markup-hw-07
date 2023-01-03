@@ -19,9 +19,8 @@
   margin: 0 auto 30px;
   color: var(--footer-logo-color);
 
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  @include font(44px, null, 1.36, 0.06em);
+
   width: 696px;
 }
 
@@ -34,9 +33,9 @@
 
   font-family: inherit;
   cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+
+  @include font(16px, 700, 1.88, null);
+
   border-radius: 4px;
   border: 0;
 

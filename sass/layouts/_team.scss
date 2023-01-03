@@ -24,16 +24,16 @@
 }
 
 .name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(16px, 500, 1.19, null);
+
   margin-bottom: 10px;
 }
 
 .position {
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.19;
+  
+  @include font(16px, null, 1.19, null);
+
   color: var(--secondary-color);
 }
 

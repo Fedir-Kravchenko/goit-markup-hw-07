@@ -12,8 +12,9 @@
   background-color: #f5f4fa;
   cursor: pointer;
   color: var(--main-text-color);
-  font-size: 16px;
-  line-height: 1.63;
+
+  @include font(16px, null, 1.63, null);
+  
   border: 0;
   border-radius: 4px;
 
@@ -82,13 +83,12 @@
 
 .section.examples .section-title {
   color: var(--main-text-color);
-  font-size: 18px;
-  line-height: 2;
+
+  @include font(18px, null, 2, null);
 }
 
 .section.examples .section-text {
-  font-size: 16px;
-  line-height: 1.88;
+  @include font(16px, null, 1.88, null);
 }
 
 .thamb-portfolio-img {
@@ -117,11 +117,7 @@
   right: 0;
   padding: 63px 24px;
 
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-
-  letter-spacing: 0.03em;
+  @include font(18px, 400, 1.56, 0.03em);
 
   color: #ffffff;
 
