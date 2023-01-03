@@ -31,13 +31,13 @@
   }
 }
 
-.name {
+.item__name {
   @include font(16px, 500, 1.19, null);
 
   margin-bottom: 10px;
 }
 
-.position {
+.item__position {
   margin-bottom: 16px;
   @include font(16px, null, 1.19, null);
 
@@ -52,7 +52,7 @@
   }
 }
 
-.icon-social {
+.list-social__icon {
   padding: 12px;
   fill: currentColor;
 
@@ -65,7 +65,7 @@
   }
 }
 
-.link-social {
+.list-social__link {
   @extend %flex-align;
   justify-content: center;
   height: 44px;
@@ -83,7 +83,7 @@
   }
 }
 
-.item-social {
+.list-social__item {
   margin-right: 10px;
   &:nth-child(4n) {
     margin-right: 0;
