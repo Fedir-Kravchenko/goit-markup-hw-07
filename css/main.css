@@ -53,7 +53,7 @@ img {
   --footer-logo-color: #ffffff;
 }
 
-.modal-form, .close-btn, .thamb-portfolio-img, .sub-btn, .social-networcs .link, .clients-link, .list-social__link, .advantages__icon, .contacts__mail,
+.modal-form, .close-btn, .thamb-portfolio-img, .sub-btn, .social-networcs .link, .clients__link, .list-social__link, .advantages__icon, .contacts__mail,
 .contacts__phone, .contacts__list, .navigation, .header .container {
   display: flex;
   align-items: center;
@@ -289,8 +289,7 @@ img {
   line-height: 1.14;
 }
 
-.work .work__title,
-.clients .clients__title {
+.work .work__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
@@ -402,11 +401,26 @@ img {
   text-align: center;
 }
 
-.clients-list {
+.clients__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.clients__list {
   display: flex;
 }
 
-.clients-link {
+.clients__item {
+  display: block;
+}
+.clients__item:nth-child(6n) {
+  margin-right: 0;
+}
+
+.clients__link {
   justify-content: center;
   margin-right: 30px;
   width: 170px;
@@ -416,19 +430,12 @@ img {
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover, .clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   color: #2196f3;
   border-color: #2196f3;
 }
 
-.clients-item {
-  display: block;
-}
-.clients-item:nth-child(6n) {
-  margin-right: 0;
-}
-
-.link-icon {
+.clients__icon {
   fill: currentColor;
 }
 

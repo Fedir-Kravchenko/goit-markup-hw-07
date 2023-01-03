@@ -43,8 +43,7 @@
   @include font(14px, null, 1.14, null);
 }
 
-.work .work__title,
-.clients .clients__title {
+.work .work__title {
   margin-bottom: 50px;
 
   @include font(36px, null, 1.17, 0.03em);
