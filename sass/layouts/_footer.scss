@@ -11,8 +11,8 @@
 }
 
 .footer,
-.footer-address,
-.footer-contact {
+.footer-list__address,
+.footer-list__contact {
   background-color: var(--hero-footer-background);
   @include font(14px, null, 1.14, null);
 
@@ -29,7 +29,7 @@
   @include font(26px, null, 1.19, null);
 }
 
-.footer-address {
+.footer-list__address {
   color: var(--footer-logo-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -39,7 +39,7 @@
   }
 }
 
-.footer-contact {
+.footer-list__contact {
   color: rgba(255, 255, 255, 0.6);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -49,22 +49,23 @@
   }
 }
 
-.footer-contact-list .item:not(:last-child) {
+.footer-list .item:not(:last-child) {
   margin-bottom: 9px;
 }
+// Networks
 
-.title-social {
+.networcs__title {
   margin-bottom: 20px;
   @include font(14px, null, 1.14, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.footer-social {
+.networcs__list {
   display: flex;
 }
 
-.social-networcs .link {
+.networcs__link {
   @extend %flex-align;
   justify-content: center;
   height: 44px;
@@ -78,18 +79,16 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-networcs .link:hover,
-.social-networcs .link:focus {
+.networcs__link:hover,
+.networcs__link:focus {
   background-color: var(--accent-color);
 }
 
-.footer-icon-social {
-  fill: #ffffff;
-}
-
-.social-networcs .item:not(:last-child) {
+.networcs__item:not(:last-child) {
   margin-right: 10px;
 }
+
+// Form
 
 .subscribe {
   display: flex;
@@ -101,12 +100,12 @@
   height: 86px;
 }
 
-.form-subscribe {
+.subscribe__form {
   display: flex;
   flex-direction: column;
 }
 
-.form-label {
+.subscribe__label {
   margin-bottom: 20px;
 
   @include font(14px, 700, 1.14, 0.03em);
@@ -115,7 +114,7 @@
   color: #ffffff;
 }
 
-.form-input {
+.subscribe__input {
   display: block;
   padding: 15px 15px 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -127,9 +126,13 @@
 
   background-color: transparent;
   color: #ffffff;
+
+  .subscribe__form:hover & {
+    border-color: #2196f3;
+  }
 }
 
-.sub-btn {
+.subscribe__btn {
   @extend %flex-align;
   justify-content: center;
   margin-left: 12px;
@@ -146,7 +149,7 @@
   cursor: pointer;
 }
 
-.icon-send {
+.subscribe__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
