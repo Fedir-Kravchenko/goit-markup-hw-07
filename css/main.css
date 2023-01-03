@@ -460,7 +460,7 @@ img {
   font-style: normal;
 }
 
-.footer-logo {
+.footer__logo {
   display: inline-block;
   margin-bottom: 20px;
   color: var(--footer-logo-color);

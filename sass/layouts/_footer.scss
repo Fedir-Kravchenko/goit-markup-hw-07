@@ -19,7 +19,7 @@
   font-style: normal;
 }
 
-.footer-logo {
+.footer__logo {
   display: inline-block;
   margin-bottom: 20px;
 
@@ -109,7 +109,7 @@
 .form-label {
   margin-bottom: 20px;
 
-@include font(14px, 700, 1.14, 0.03em);
+  @include font(14px, 700, 1.14, 0.03em);
   text-transform: uppercase;
 
   color: #ffffff;
@@ -124,10 +124,9 @@
   height: 50px;
 
   @include font(16px, null, 1.25, 0.03em);
-  
+
   background-color: transparent;
   color: #ffffff;
-
 }
 
 .sub-btn {
