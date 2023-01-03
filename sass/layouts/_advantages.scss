@@ -12,22 +12,19 @@
   margin-right: 30px;
 
   &:nth-child(4n) {
-  margin-right: 0;
-}
+    margin-right: 0;
+  }
 
- .section-title {
-  margin-bottom: 10px;
-}
+  .section-title {
+    margin-bottom: 10px;
+  }
 }
 
 .icon-advantages {
-  display: flex;
   justify-content: center;
-  align-items: center;
+  @extend %flex-align;
   margin-bottom: 30px;
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
 }
-
-

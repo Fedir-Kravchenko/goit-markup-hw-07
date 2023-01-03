@@ -8,8 +8,7 @@
 }
 
 .clients-link {
-  display: inline-flex;
-  align-items: center;
+@extend %flex-align;
   justify-content: center;
   margin-right: 30px;
   width: 170px;

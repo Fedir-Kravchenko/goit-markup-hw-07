@@ -5,8 +5,7 @@
 }
 
 .container.header {
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
   justify-content: space-between;
 }
 
@@ -49,8 +48,7 @@
 }
 
 .header-nav {
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
 
   .link.current {
     color: #2196f3;
@@ -75,8 +73,7 @@
 /* 1.2 contacts */
 
 .contacts {
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
 
   .link:hover,
   .link:focus {
@@ -90,9 +87,8 @@
 
 .mail,
 .phone {
-  display: inline-flex;
+  @extend %flex-align;
   padding: 32px 0 32px;
-  align-items: center;
   color: var(--secondary-color);
 
   font-weight: 500;

@@ -53,6 +53,12 @@ img {
   --footer-logo-color: #ffffff;
 }
 
+.modal-form, .close-btn, .thamb-portfolio-img, .sub-btn, .social-networcs .link, .clients-link, .link-social, .icon-advantages, .mail,
+.phone, .contacts, .header-nav, .container.header {
+  display: flex;
+  align-items: center;
+}
+
 .container {
   padding: 0 15px;
   margin: 0 auto;
@@ -80,8 +86,6 @@ img {
 }
 
 .container.header {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -117,10 +121,6 @@ img {
   color: var(--accent-color);
 }
 
-.header-nav {
-  display: flex;
-  align-items: center;
-}
 .header-nav .link.current {
   color: #2196f3;
 }
@@ -141,10 +141,6 @@ img {
 }
 
 /* 1.2 contacts */
-.contacts {
-  display: flex;
-  align-items: center;
-}
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
@@ -155,9 +151,7 @@ img {
 
 .mail,
 .phone {
-  display: inline-flex;
   padding: 32px 0 32px;
-  align-items: center;
   color: var(--secondary-color);
   font-weight: 500;
   font-size: 14px;
@@ -239,9 +233,7 @@ img {
 }
 
 .icon-advantages {
-  display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 30px;
   height: 120px;
   border-radius: 4px;
@@ -365,8 +357,6 @@ img {
 }
 
 .link-social {
-  display: flex;
-  align-items: center;
   justify-content: center;
   height: 44px;
   width: 44px;
@@ -407,8 +397,6 @@ img {
 }
 
 .clients-link {
-  display: inline-flex;
-  align-items: center;
   justify-content: center;
   margin-right: 30px;
   width: 170px;
@@ -498,8 +486,6 @@ img {
 }
 
 .social-networcs .link {
-  display: flex;
-  align-items: center;
   justify-content: center;
   height: 44px;
   width: 44px;
@@ -562,8 +548,6 @@ img {
 }
 
 .sub-btn {
-  display: flex;
-  align-items: center;
   justify-content: center;
   margin-left: 12px;
   padding: 10px 28px;
@@ -623,9 +607,9 @@ img {
 /* fonts in portfolio */
 .list-examples {
   display: flex;
+  justify-content: center;
   padding-bottom: 94px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .item-work {
@@ -669,9 +653,7 @@ img {
 
 .thamb-portfolio-img {
   position: relative;
-  display: flex;
   justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 .thamb-portfolio-img::before {
@@ -717,9 +699,7 @@ img {
 }
 
 .close-btn {
-  display: flex;
   justify-content: center;
-  align-items: center;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -747,9 +727,7 @@ img {
 }
 
 .modal-form {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 12px 40px 40px 40px;
 }
 

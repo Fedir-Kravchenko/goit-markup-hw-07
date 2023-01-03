@@ -41,9 +41,9 @@
 
 .list-examples {
   display: flex;
+  justify-content: center;
   padding-bottom: 94px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .item-work {
@@ -93,9 +93,8 @@
 
 .thamb-portfolio-img {
   position: relative;
-  display: flex;
+  @extend %flex-align;
   justify-content: center;
-  align-items: center;
   overflow: hidden;
 
   &::before {

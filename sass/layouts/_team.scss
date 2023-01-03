@@ -59,8 +59,7 @@
 }
 
 .link-social {
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
   justify-content: center;
   height: 44px;
   width: 44px;

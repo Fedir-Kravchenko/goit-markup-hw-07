@@ -13,9 +13,8 @@
 }
 
 .close-btn {
-  display: flex;
+  @extend %flex-align;
   justify-content: center;
-  align-items: center;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -49,9 +48,8 @@
 }
 
 .modal-form {
-  display: flex;
+  @extend %flex-align;
   flex-direction: column;
-  align-items: center;
   margin: 12px 40px 40px 40px;
 }
 
